@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  /* width:90%; */
+  margin: 0 auto;
+  /*margin: 2% auto;*/
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*= 'col-'] {
+  /* min-height: 15px; */
+  padding: 1em; /*15px*/
+  float: left; 
+  background:rgb(243, 244, 245); 
+  outline: 1px solid rgb(225, 65, 185); 
+  margin-right: 2%; /*Esto es el gutter */
+}
+
+.row [class*= 'col-']:last-child{
+  margin-right: 0;
+}
+
+.col-xs-1 {
+  /* (1 / 12) * 100 
+  100-22 = 78%12 = 6.5
+  */
+  /* width: 8.333333%; */
+  width: 6.5%;
+}
+
+.col-xs-2{
+  /* (2 / 12) * 100 
+  100-10 = 90 / 6 = 15*/
+  width: 15%;
+}
+
+.col-xs-3{
+  /* (3 / 12) * 100 
+  100 - 6 = 94/4 = 23.5%  */
+  width: 23.5%; 
+}
+
+.col-xs-4 {
+  /* (4 / 12) * 100 
+      100 - 4 = 96  96/3 = 32%   */
+  width: 32%;
+}
+
+/*FALTA col-xs-5*/
+
+.col-xs-6 { 
+  /* (5 / 12) * 100  --> 49 * 2 = 98 */
+  width: 49%;
+}
+
+/*FALTA col-xs-7*/
+/*FALTA col-xs-8*/
+
+.col-xs-9 { 
+  /* (9 / 12) * 100 */
+  width: 74.5%;
+}
+
+/*FALTA col-xs-10*/
+/*FALTA col-xs-11*/
+
+.col-xs-12 { 
+  /* (12 / 12) * 100 */
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .col-sm-1 {
+    /* (1 / 12) * 100 
+    100-22 = 78%12 = 6.5
+    */
+    /* width: 8.333333%; */
+    width: 6.5%;
+  }
+  
+  .col-sm-2{
+    /* (2 / 12) * 100 
+    100-10 = 90 / 6 = 15*/
+    width: 15%;
+  }
+  
+  .col-sm-3{
+    /* (3 / 12) * 100 
+    100 - 6 = 94/4 = 23.5%  */
+    width: 23.5%; 
+  }
+  
+  .col-sm-4 {
+    /* (4 / 12) * 100 
+        100 - 4 = 96  96/3 = 32%   */
+    width: 32%;
+  }
+  
+  /*FALTA col-xs-5*/
+  
+  .col-sm-6 { 
+    /* (5 / 12) * 100  --> 49 * 2 = 98 */
+    width: 49%;
+  }
+  
+  /*FALTA col-xs-7*/
+  /*FALTA col-xs-8*/
+  
+  .col-sm-9 { 
+    /* (9 / 12) * 100 */
+    width: 74.5%;
+  }
+  
+  /*FALTA col-xs-10*/
+  /*FALTA col-xs-11*/
+  
+  .col-sm-12 { 
+    /* (12 / 12) * 100 */
+    width: 100%;
+  }
+} 
+/* Para los media Queries necesito definir los brakpoints */
+
+/* small 480px
+medium 768px
+large 992px */
+
+/* Large Grid */
+@media (min-width: 992px) {
+  /* Las divisiones (gutters) son uno menos 
+  que la cantidad de cols */
+
+  .col-md-1 {
+    /* (1 / 12) * 100 
+    100-22 = 78%12 = 6.5
+    */
+    /* width: 8.333333%; */
+    width: 6.5%;
+  }
+  
+  .col-md-2{
+    width: 15%;
+  }
+  
+  .col-md-3{
+    width: 23.5%; 
+  }
+  
+  .col-md-4 {
+    width: 32%;
+  }
+  
+  /*FALTA col-xs-5*/
+  
+  .col-md-6 { 
+    width: 49%;
+  }
+  
+  /*FALTA col-xs-7*/
+  /*FALTA col-xs-8*/
+  
+  .col-md-9 { 
+    width: 74.5%;
+  }
+  
+  /*FALTA col-xs-10*/
+  /*FALTA col-xs-11*/
+  
+  .col-md-12 { 
+    width: 100%;
+  }
+}
